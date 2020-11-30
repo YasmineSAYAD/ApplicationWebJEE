@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<display-name>GestionCriminels</display-name>
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/DirectiveSite.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+<welcome-file-list><welcome-file>Login.jsp</welcome-file></welcome-file-list>
+
+<servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.Login</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AjoutCriminel</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.AjoutCriminel</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>AjoutCriminel</servlet-name>
+    <url-pattern>/AjoutCriminel</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AjoutEnquete</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.AjoutEnquete</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>AjoutEnquete</servlet-name>
+    <url-pattern>/AjoutEnquete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AjoutPolicier</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.AjoutPolicier</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>AjoutPolicier</servlet-name>
+    <url-pattern>/AjoutPolicier</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Consultation</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.Consultation</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>Consultation</servlet-name>
+    <url-pattern>/Consultation</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Gestion</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.Gestion</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>Gestion</servlet-name>
+    <url-pattern>/Gestion</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>GestionCriminel</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.GestionCriminel</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>GestionCriminel</servlet-name>
+    <url-pattern>/GestionCriminel</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GestionEnquete</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.GestionEnquete</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>GestionEnquete</servlet-name>
+    <url-pattern>/GestionEnquete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GestionPolicier</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.GestionPolicier</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>GestionPolicier</servlet-name>
+    <url-pattern>/GestionPolicier</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ListeCriminel</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.ListeCriminel</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>ListeCriminel</servlet-name>
+    <url-pattern>/ListeCriminel</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ListeEnquete</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.ListeEnquete</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>ListeEnquete</servlet-name>
+    <url-pattern>/ListeEnquete</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>ListePolicier</servlet-name>
+    <servlet-class>com.SiteWeb.servlet.ListePolicier</servlet-class>
+</servlet>
+<servlet-mapping>
+    
+    <servlet-name>ListePolicier</servlet-name>
+    <url-pattern>/ListePolicier</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+</web-app>
